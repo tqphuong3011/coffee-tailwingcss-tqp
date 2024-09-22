@@ -1,8 +1,8 @@
 # TAKE NOTE
 
-## Link for learn
-Set up Tailwing CSS: [link](https://tailwindcss.com/docs/installation)/
-Template website: [link](https://webflow.com/)/
+### Link for learn
+Set up Tailwing CSS: [link](https://tailwindcss.com/docs/installation) \
+Template website: [link](https://webflow.com/) \
 Youtube: [link](https://www.youtube.com/watch?v=npWpnf664LE&list=PLP6tw4Zpj-RK9PxvjySFM7jc5aNn_RyLX&index=2)
 
 # Getting Started with Create React App
