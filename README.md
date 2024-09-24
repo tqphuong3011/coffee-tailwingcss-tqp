@@ -1,11 +1,17 @@
-# TAKE NOTE
-
-Learn TAILWING CSS
+# TailwingCss Style by TQPhuong
 
 ## Link for learn
-Set up Tailwing CSS: [Installation](https://tailwindcss.com/docs/installation) \
-Template website: [Webflow](https://webflow.com/) \
-Youtube: [TrungQuanDev](https://www.youtube.com/watch?v=npWpnf664LE&list=PLP6tw4Zpj-RK9PxvjySFM7jc5aNn_RyLX&index=2)
+1. Set up Tailwing CSS: [Installation](https://tailwindcss.com/docs/installation) \
+2. Template website: [Webflow](https://webflow.com/) \
+3. Youtube: [TrungQuanDev](https://www.youtube.com/watch?v=npWpnf664LE&list=PLP6tw4Zpj-RK9PxvjySFM7jc5aNn_RyLX&index=2)\
+4. Icons: [Heroicons](https://heroicons.com/)
+
+## Extensions VS
+1. PostCSS Language Support
+2. Tailwind CSS IntelliSense
+
+## Run file input/output
+### `npm run build:css` => can delete output.css and run this command
 
 # Getting Started with Create React App
 
