@@ -1,15 +1,29 @@
 import './tailwindcss/output.css';
 // eslint-disable-next-line
 function App() {
+
+  document.addEventListener('click', (e) => {
+    const topMenu = document.getElementById('tqp-top-menu');
+    if (e.target.id === 'tqp-toggle-top-menu-icon') {
+      topMenu.classList.toggle('tqp-topmenu-expanded');
+      topMenu.classList.toggle('hidden');
+    }
+    else{
+      if (topMenu.classList.contains('tqp-topmenu-expanded')) {
+        topMenu.classList.remove('tqp-topmenu-expanded');
+        topMenu.classList.add('hidden');
+      }
+    }
+  });
+
   return (
-    <div>
-        <div className='content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200'>
-          <header className='py-6 mx-10'>
-            <nav className='flex flex-row justify-between items-center'>
+        <div className='content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8 bg-slate-200'>
+          <header className='p-6 mx-auto'>
+            <nav className='flex flex-row justify-between items-center relative'>
               <div className='logo basis-2/6 text-center text-xl font-semibold cursor-pointer'>
                 CoffeeStyle.  
               </div>
-              <ul className='basis-3/6 flex flex-row items-center justify-end gap-8 uppercase text-sm text-gray-500 font-medium'>
+              <ul id='tqp-top-menu' className='basis-3/6 hidden  lg:flex lg:items-center lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium '>
                 <li className='tqp-top-menu-item'>
                   <a href='#'>Home</a>
                 </li>
@@ -22,11 +36,11 @@ function App() {
                 <li className='tqp-top-menu-item'>
                   <a href='#'>Contact</a>
                 </li>
-                <li className='tqp-top-menu-item'>
+                <li className='tqp-top-menu-item tqp-top-menu-item-active'>
                   <a href='#'>StyleGuide</a>
                 </li>
               </ul>
-              <ul className='basis-1/6 flex justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium'>
+              <ul className='basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium'>
                 <li className='tqp-top-menu-item'>
                   <a href='#' className='flex items-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="tqp-icon">
@@ -37,6 +51,11 @@ function App() {
                   </a>
                 </li>
               </ul>
+              <div className='basis-1/6 lg:hidden flex items-center cursor-pointer px-3 sm:px-8'>
+                <svg id='tqp-toggle-top-menu-icon' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="tqp-icon">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </div>
             </nav>
           </header>
           
@@ -80,7 +99,6 @@ function App() {
           
           </footer>
         </div>
-    </div>
   );
 }
 

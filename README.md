@@ -2,9 +2,11 @@
 
 ## Link for learn
 1. Set up Tailwing CSS: [Installation](https://tailwindcss.com/docs/installation) \
-2. Template website: [Webflow](https://webflow.com/) \
-3. Youtube: [TrungQuanDev](https://www.youtube.com/watch?v=npWpnf664LE&list=PLP6tw4Zpj-RK9PxvjySFM7jc5aNn_RyLX&index=2)\
+2. Template website: [Webflow](https://webflow.com/)
+3. Youtube: [TrungQuanDev](https://www.youtube.com/watch?v=npWpnf664LE&list=PLP6tw4Zpj-RK9PxvjySFM7jc5aNn_RyLX&index=2)
 4. Icons: [Heroicons](https://heroicons.com/)
+5. Fonts: [GoogleFont](https://fonts.google.com/)
+6. Favicon: [Link ref W3](https://www.w3schools.com/tags/att_link_sizes.asp)
 
 ## Extensions VS
 1. PostCSS Language Support

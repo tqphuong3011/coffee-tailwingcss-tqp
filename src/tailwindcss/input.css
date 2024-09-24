@@ -1,23 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 /* tqp */
+.tqp-topmenu-expanded{
+     @apply 
+     absolute
+     top-10
+     z-50
+     w-full
+     bg-white
+     text-center
+     animate-slideDown;
+}
+
 .tqp-top-menu-item{
      @apply 
      cursor-pointer 
      py-1 
      hover:text-gray-800 
      relative 
-     after:absolute 
-     after:bottom-0 after:left-0 
-     after:bg-light-coffee 
-     after:h-0.5  after:w-0 
-     hover:after:w-full 
-     after:transition-all 
-     after:ease-in-out 
-     after:duration-300;
+     after:lg:absolute 
+     after:lg:bottom-0 
+     after:lg:left-0 
+     after:lg:bg-light-coffee 
+     hover:after:lg:w-full 
+     after:lg:h-0.5  after:lg:w-0 
+     after:lg:transition-all 
+     after:lg:ease-in-out 
+     after:lg:duration-300;
+}
+
+.tqp-top-menu-item-active{
+     @apply
+     text-gray-800;
 }
 
 .tqp-icon{
@@ -27,3 +45,4 @@
 .tqp-badge-circle{
      @apply text-xs text-center rounded-full px-1.5;
 }
+
