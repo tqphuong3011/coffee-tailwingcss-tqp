@@ -17,7 +17,7 @@ function App() {
   });
 
   return (
-        <div className='content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8 bg-slate-200'>
+        <div className='content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8 '>
           <header className='p-6 mx-auto'>
             <nav className='flex flex-row justify-between items-center relative'>
               <div className='logo basis-2/6 text-center text-xl font-semibold cursor-pointer'>
@@ -60,36 +60,88 @@ function App() {
           </header>
           
           <main>
-
             {/* start slider */}
-            <div className='slider'>
-              slider
+            <div className="slider h-[530px] mb-24 bg-[url('../../public/img/slider-bg.png')] bg-cover bg-no-repeat bg-bottom">
+              <div className='w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-40'>
+                <div className='mx-16 text-white text-center'>
+                  <div className='uppercase font-bold text-xs tracking-widest opacity-80'>BEST PLACE TO BUY COFFEE</div>
+                  <div className='font-normal text-5xl my-3 '>Coffee Mugs</div>
+                  <div className='text-lg mb-8 opacity-90'>The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</div>
+                  <div className='flex justify-center'>
+                    <div className='w-max uppercase bg-white text-xs text-gray-900 font-bold tracking-widest px-6 py-4 cursor-pointer hover:bg-opacity-95'>
+                      EXPLORE OUR PRODUCTS
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* start story */}
-            <div className='story'>
-              story
+            <div className='story tqp-content '>
+                <div className='w-[90%] md:w-[70%] text-center'>
+                  <h2 className='text-title-story leading-10 my-5 font-normal '>
+                    Even the all-powerful Pointing has no control about the blind texts.
+                  </h2>
+                  <p className='text-base leading-7 text-story-content mb-[25px] font-normal'>
+                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth. 
+                    Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic 
+                    life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the 
+                    far World of Grammar.
+                  </p>
+                  <div>
+                    <a href='#' className='text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 
+                    after:left-0 after:bg-coffee-50 hover:after:bg-coffee-400 after:w-full after:h-0.5 after:transition-all after:ease-in-out after:duration-500'>
+                      Read the full Story
+                    </a>
+                  </div>
+                </div>
             </div>
 
             {/* start featured-mugs */}
-            <div className='featured-mugs'>
-              featured-mugs
+            <div className='tqp-content'>
+              <div className='tqp-subhead-line'></div>
+              <div className='tqp-subhead '>featured mugs</div>
+              <div className='tqp-subhead-line'></div>
+            </div>
+            <div className='tqp-content'>
+              featured-mugs-list
             </div>
 
             {/* start more-products */}
-            <div className='more-products'>
-              more-products
+            <div className='tqp-content'>
+              <div className='tqp-subhead-line'></div>
+              <div className='tqp-subhead '>more products</div>
+              <div className='tqp-subhead-line'></div>
+            </div>
+            <div className='tqp-content'>
+              more-products-list
+            </div>
+            
+            {/* start coffe magazine */}
+            <div className='tqp-content'>
+              <div className='tqp-subhead-line'></div>
+              <div className='tqp-subhead '>buy 2 mugs and get a coffee magazine free</div>
+              <div className='tqp-subhead-line'></div>
+            </div>
+            <div className='tqp-content'>
+              magazine info
             </div>
 
+
             {/* start lifestyle-stories */}
-            <div className='lifestyle-stories-mugs'>
-              lifestyle-stories
+            <div className='tqp-content'>
+              <div className='tqp-subhead-line'></div>
+              <div className='tqp-subhead '>behind the mugs, lifestyle stories</div>
+              <div className='tqp-subhead-line'></div>
+            </div>
+            <div className='tqp-content'>
+              lifestyle stories
             </div>
 
             {/* start subcrise-us */}
-            <div className='subcrise-us'>
+            {/* <div className='subcrise-us tqp-content'>
             subcrise-us
-            </div>
+            </div> */}
 
           </main>
 

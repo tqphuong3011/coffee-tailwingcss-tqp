@@ -6,8 +6,18 @@ module.exports = {
       fontFamily:{
         Karla: ['Karla', 'sans-serif']
       },
+      fontSize: {
+        "title-story": ['28px', '40px']
+      },  
       colors:{
-        "light-coffee" : "#C89f94"
+        "story-content":"#1D1F2EB3",
+        "subhead":"#1D1F2E",
+        "coffee":{
+          50:"#E8D6D0",
+          200:"#C89f94",
+          400:"#A25F4B",
+          600:"#744838"
+        },
       },
       keyframes:{
         slideDown:{

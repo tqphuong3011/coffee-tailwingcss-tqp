@@ -25,7 +25,7 @@
      after:lg:absolute 
      after:lg:bottom-0 
      after:lg:left-0 
-     after:lg:bg-light-coffee 
+     after:lg:bg-coffee-200 
      hover:after:lg:w-full 
      after:lg:h-0.5  after:lg:w-0 
      after:lg:transition-all 
@@ -46,3 +46,31 @@
      @apply text-xs text-center rounded-full px-1.5;
 }
 
+.tqp-content{
+     @apply
+     flex 
+     justify-center 
+     items-center 
+     max-w-[940px] 
+     mb-[100px]
+     mx-auto
+}
+
+.tqp-subhead-line{
+     @apply 
+     w-8 
+     h-px 
+     bg-gray-200;
+}
+
+.tqp-subhead{
+     @apply 
+     mx-[15px] 
+     text-subhead 
+     text-opacity-60 
+     text-center
+     uppercase 
+     font-bold 
+     text-xs 
+     tracking-[2px];
+}
