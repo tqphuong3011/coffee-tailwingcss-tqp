@@ -61,14 +61,14 @@ function App() {
           
           <main>
             {/* start slider */}
-            <div className="slider h-[530px] mb-24 bg-[url('../../public/img/slider-bg.png')] bg-cover bg-no-repeat bg-bottom">
+            <div className="slider h-[530px] mb-24 bg-[url('../../public/img/slider-bg.png')] bg-cover bg-no-repeat bg-bottom -mx-[32px] lg:mx-0">
               <div className='w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-40'>
                 <div className='mx-16 text-white text-center'>
                   <div className='uppercase font-bold text-xs tracking-widest opacity-80'>BEST PLACE TO BUY COFFEE</div>
                   <div className='font-normal text-5xl my-3 '>Coffee Mugs</div>
                   <div className='text-lg mb-8 opacity-90'>The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</div>
                   <div className='flex justify-center'>
-                    <div className='w-max uppercase bg-white text-xs text-gray-900 font-bold tracking-widest px-6 py-4 cursor-pointer hover:bg-opacity-95'>
+                    <div className='tqp-button w-max bg-white text-gray-900'>
                       EXPLORE OUR PRODUCTS
                     </div>
                   </div>
@@ -98,13 +98,59 @@ function App() {
             </div>
 
             {/* start featured-mugs */}
-            <div className='tqp-content'>
+            <div className='featured-mugs tqp-content'>
               <div className='tqp-subhead-line'></div>
               <div className='tqp-subhead '>featured mugs</div>
               <div className='tqp-subhead-line'></div>
             </div>
-            <div className='tqp-content'>
-              featured-mugs-list
+            <div className='featured-mugs-list tqp-content'>
+              <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 '>
+                <div className='tqp-product-card'> 
+                  <div className="h-[380px] md:h-[540px] bg-[url('../../public/img/product-01.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href='#'>
+                      <div className='h-full w-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group'>
+                        <div className='tqp-button absolute w-[90%] bottom-4 left-1/2 -translate-x-1/2 
+                        bg-white text-gray-900 hidden group-hover:block group-hover:animate-fadeIn'>
+                          Explore Mug
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className='text-center mt-8'>
+                    <a href='#'>
+                      <div className='text-xl mb-3 hover:text-coffee-400 text-[#1d1f2e]'>Pink Premium Ceramic </div>
+                    </a>
+                    <div className=''>
+                      <span className='ml-2 text-gray-500'>$ 99.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+                <div className='tqp-product-card'> 
+                  <div className="h-[380px] md:h-[540px] bg-[url('../../public/img/product-02.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href='#'>
+                        <div className='h-full w-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group'>
+                          <div className='absolute w-[100px] py-[6px] px-[15px] top-3 right-3 text-center 
+                          bg-white font-semibold text-coffee-400'>
+                            On Sale.
+                          </div>
+                          <div className='tqp-button absolute w-[90%] bottom-4 left-1/2 -translate-x-1/2 
+                          bg-white text-gray-900 hidden group-hover:block group-hover:animate-fadeIn'>
+                            Explore Mug
+                          </div>
+                        </div>
+                      </a>
+                  </div>
+                  <div className='text-center mt-8'>
+                    <a href='#'>
+                      <div className='text-xl mb-3 hover:text-coffee-400 text-[#1d1f2e]'>Golden Designers Mug</div>
+                    </a>
+                    <div className=''>
+                      <span className='text-[20px] text-coffee-400'>$50.00</span>
+                      <span className='ml-2 text-gray-400 line-through'>$ 69.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* start more-products */}
@@ -114,7 +160,216 @@ function App() {
               <div className='tqp-subhead-line'></div>
             </div>
             <div className='tqp-content'>
-              more-products-list
+              <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4'>
+                <div className='tqp-product-card mb-[50px]'> 
+                  <div className="h-[380px] bg-[url('../../public/img/more-product-01.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href='#'>
+                      <div className='h-full w-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group'>
+                        <div className='absolute w-[100px] py-[6px] px-[15px] top-3 right-3 text-center 
+                        bg-white font-semibold text-coffee-400'>
+                          On Sale.
+                        </div>
+                        <div className='tqp-button absolute w-[90%] bottom-4 left-1/2 -translate-x-1/2 
+                        bg-white text-gray-900 hidden group-hover:block group-hover:animate-fadeIn'>
+                          Explore Mug
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className='text-center mt-8'>
+                    <a href='#'>
+                      <div className='text-xl mb-3 hover:text-coffee-400 text-[#1d1f2e]'>
+                        Red Love Cup 
+                      </div>
+                    </a>
+                    <div className=''>
+                      <span className='text-[20px] text-coffee-400'>$25.00</span>
+                      <span className='ml-2 text-gray-400 line-through'>$ 37.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+                <div className='tqp-product-card mb-[50px]'> 
+                  <div className="h-[380px] bg-[url('../../public/img/more-product-02.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href='#'>
+                      <div className='h-full w-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group'>
+                        <div className='absolute w-[100px] py-[6px] px-[15px] top-3 right-3 text-center 
+                        bg-white font-semibold text-coffee-400'>
+                          On Sale.
+                        </div>
+                        <div className='tqp-button absolute w-[90%] bottom-4 left-1/2 -translate-x-1/2 
+                        bg-white text-gray-900 hidden group-hover:block group-hover:animate-fadeIn'>
+                          Explore Mug
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className='text-center mt-8'>
+                    <a href='#'>
+                      <div className='text-xl mb-3 hover:text-coffee-400 text-[#1d1f2e]'>
+                        Black Tea Cup
+                      </div>
+                    </a>
+                    <div className=''>
+                      <span className='text-[20px] text-coffee-400'>$15.00</span>
+                      <span className='ml-2 text-gray-400 line-through'>$ 29.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+                <div className='tqp-product-card mb-[50px]'> 
+                  <div className="h-[380px] bg-[url('../../public/img/more-product-03.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href='#'>
+                      <div className='h-full w-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group'>
+                        <div className='tqp-button absolute w-[90%] bottom-4 left-1/2 -translate-x-1/2 
+                        bg-white text-gray-900 hidden group-hover:block group-hover:animate-fadeIn'>
+                          Explore Mug
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className='text-center mt-8'>
+                    <a href='#'>
+                      <div className='text-xl mb-3 hover:text-coffee-400 text-[#1d1f2e]'>
+                        B&W Essentials Mug
+                      </div>
+                    </a>
+                    <div className=''>
+                      <span className='ml-2 text-gray-500'>$ 19.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+                <div className='tqp-product-card mb-[50px]'> 
+                  <div className="h-[380px] bg-[url('../../public/img/more-product-04.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href='#'>
+                      <div className='h-full w-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group'>
+                        <div className='tqp-button absolute w-[90%] bottom-4 left-1/2 -translate-x-1/2 
+                        bg-white text-gray-900 hidden group-hover:block group-hover:animate-fadeIn'>
+                          Explore Mug
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className='text-center mt-8'>
+                    <a href='#'>
+                      <div className='text-xl mb-3 hover:text-coffee-400 text-[#1d1f2e]'>
+                        Winter Style Mug 
+                      </div>
+                    </a>
+                    <div className=''>
+                      <span className='ml-2 text-gray-500'>$ 25.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+                <div className='tqp-product-card mb-[50px]'> 
+                  <div className="h-[380px] bg-[url('../../public/img/more-product-05.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href='#'>
+                      <div className='h-full w-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group'>
+                        <div className='tqp-button absolute w-[90%] bottom-4 left-1/2 -translate-x-1/2 
+                        bg-white text-gray-900 hidden group-hover:block group-hover:animate-fadeIn'>
+                          Explore Mug
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className='text-center mt-8'>
+                    <a href='#'>
+                      <div className='text-xl mb-3 hover:text-coffee-400 text-[#1d1f2e]'>
+                        Ceramic Tea
+                      </div>
+                    </a>
+                    <div className=''>
+                      <span className='ml-2 text-gray-500'>$ 46.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+                <div className='tqp-product-card mb-[50px]'> 
+                  <div className="h-[380px] bg-[url('../../public/img/more-product-06.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href='#'>
+                      <div className='h-full w-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group'>
+                        <div className='tqp-button absolute w-[90%] bottom-4 left-1/2 -translate-x-1/2 
+                        bg-white text-gray-900 hidden group-hover:block group-hover:animate-fadeIn'>
+                          Explore Mug
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className='text-center mt-8'>
+                    <a href='#'>
+                      <div className='text-xl mb-3 hover:text-coffee-400 text-[#1d1f2e]'>
+                        No Handle Bar Cup 
+                      </div>
+                    </a>
+                    <div className=''>
+                      <span className='ml-2 text-gray-500'>$ 34.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+                <div className='tqp-product-card mb-[50px]'> 
+                  <div className="h-[380px] bg-[url('../../public/img/more-product-07.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href='#'>
+                      <div className='h-full w-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group'>
+                        <div className='tqp-button absolute w-[90%] bottom-4 left-1/2 -translate-x-1/2 
+                        bg-white text-gray-900 hidden group-hover:block group-hover:animate-fadeIn'>
+                          Explore Mug
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className='text-center mt-8'>
+                    <a href='#'>
+                      <div className='text-xl mb-3 hover:text-coffee-400 text-[#1d1f2e]'>
+                        Espresso Cup by Mugs.co
+                      </div>
+                    </a>
+                    <div className=''>
+                      <span className='ml-2 text-gray-500'>$ 25.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+                <div className='tqp-product-card mb-[50px]'> 
+                  <div className="h-[380px] bg-[url('../../public/img/more-product-08.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href='#'>
+                      <div className='h-full w-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group'>
+                        <div className='tqp-button absolute w-[90%] bottom-4 left-1/2 -translate-x-1/2 
+                        bg-white text-gray-900 hidden group-hover:block group-hover:animate-fadeIn'>
+                          Explore Mug
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className='text-center mt-8'>
+                    <a href='#'>
+                      <div className='text-xl mb-3 hover:text-coffee-400 text-[#1d1f2e]'>
+                        Pink Premium Ceramic 
+                      </div>
+                    </a>
+                    <div className=''>
+                      <span className='ml-2 text-gray-500'>$ 99.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+                <div className='tqp-product-card mb-[50px]'> 
+                  <div className="h-[380px] bg-[url('../../public/img/more-product-09.jpg')] bg-cover bg-no-repeat bg-center">
+                    <a href='#'>
+                      <div className='h-full w-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group'>
+                        <div className='tqp-button absolute w-[90%] bottom-4 left-1/2 -translate-x-1/2 
+                        bg-white text-gray-900 hidden group-hover:block group-hover:animate-fadeIn'>
+                          Explore Mug
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className='text-center mt-8'>
+                    <a href='#'>
+                      <div className='text-xl mb-3 hover:text-coffee-400 text-[#1d1f2e]'>
+                        Summer Designer Cup
+                      </div>
+                    </a>
+                    <div className=''>
+                      <span className='ml-2 text-gray-500'>$ 29.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             
             {/* start coffe magazine */}
@@ -124,9 +379,28 @@ function App() {
               <div className='tqp-subhead-line'></div>
             </div>
             <div className='tqp-content'>
-              magazine info
-            </div>
+              <div className='w-full flex flex-row justify-center items-center gap-5'>
+                <div className='tqp-magazine-imgs basis-1/2 flex flex-row gap-5'> 
+                    
+                    <div className="tqp-magazine-big-img h-[280px] basis-2/3 bg-[url('../../public/img/magazine-product-01.jpg')] bg-cover bg-no-repeat bg-center">
+                    </div>
 
+                    <div className="tqp-magazine-small-imgs basis-1/3 flex flex-col gap-5">
+                      <div className="tqp-magazine-small-img-01 h-[130px] bg-[url('../../public/img/magazine-product-02.jpg')] bg-cover bg-no-repeat bg-center">
+                      </div>
+                      <div className="tqp-magazine-small-img-02 h-[130px] bg-[url('../../public/img/magazine-product-03.jpg')] bg-cover bg-no-repeat bg-center">
+                      </div>
+                    </div>
+
+                </div>
+                <div className='tqp-magazine-content basis-1/2'> 
+                  <div className=''>PREMIUM OFFER</div>
+                  <div className=''>Get our Coffee Magazine</div>
+                  <div className=''>The most versatile furniture system ever created. Designed to fit your life.</div>
+                  <div className='w-max bg-story-content text-white tqp-button'>START SHOPPING</div>
+                </div>
+              </div>
+            </div>
 
             {/* start lifestyle-stories */}
             <div className='tqp-content'>

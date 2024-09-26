@@ -74,3 +74,16 @@
      text-xs 
      tracking-[2px];
 }
+
+.tqp-button{
+     @apply
+     text-center 
+     uppercase
+     tracking-[2px] 
+     px-6 
+     py-4 
+     text-xs
+     font-bold
+     cursor-pointer 
+     hover:bg-opacity-90
+}
