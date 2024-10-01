@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        "xs": "480px"
+      },
       fontFamily:{
         Karla: ['Karla', 'sans-serif']
       },
@@ -17,7 +20,7 @@ module.exports = {
           200:"#C89f94",
           400:"#A25F4B",
           600:"#744838"
-        },
+        }
       },
       keyframes:{
         slideDown:{
